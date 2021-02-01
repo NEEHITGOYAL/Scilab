@@ -1,6 +1,8 @@
 //Convolving 2 seq in discrete time domain without convol func
 
-clc ; clear ; close ;
+clc ;
+clear ; 
+close ;
 
 x=input('ENTER THE FIRST SEQUENCE x(n): ');
 m=length(x);
@@ -43,7 +45,6 @@ for i=1:m+n-1
         end
     end
 end
-y
 
 r=0:1:m+n-2;
 
@@ -54,3 +55,5 @@ a.y_location = "origin";
 plot2d3('gnn',r,y)         //plot of convoluted signal
 title('convolution of x(n) & h(n) is :');
 xlabel('-->n');
+disp ( "The convoluted sequence") ;
+disp ( y );

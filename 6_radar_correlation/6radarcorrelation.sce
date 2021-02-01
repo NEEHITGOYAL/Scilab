@@ -1,6 +1,8 @@
 // application of correlation-RADAR
 clc ;
 clear ;
+close ;
+
 x =[0 1 2 3 2 1 0]; // Triangle pulse transmitted by radar
 n =[ -3 -2 -1 0 1 2 3]; // Index of Triangular Pulse
 D =10; // Delay amount

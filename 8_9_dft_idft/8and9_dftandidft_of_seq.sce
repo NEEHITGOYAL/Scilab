@@ -13,9 +13,9 @@ for K = 0: N -1
     end
 end
 [phase,db] = phasemag(XK)
-disp ( XK , "Discrete Fourier Transform X( k )= " )
-disp (abs( XK ) , " Magnitude Spectral Sample s= " )
-disp ( phase , " Phase Spectral Sample s= " )
+disp ( "Discrete Fourier Transform X( k )= ", XK  )
+disp ( " Magnitude Spectral Sample s= " ,abs( XK ))
+disp ( " Phase Spectral Sample s= ", phase ,)
 n = 0:N -1;
 K = 0:N -1;
 subplot (2 ,2 ,1)
@@ -55,8 +55,8 @@ a = gca () ;
 a.x_location = "origin";
 a.y_location = "origin";
 plot2d3 ( "gnn",[0:N-1] , ixn )
-xlabel ( " D i s c r e t e Time I n d e x n −−−−> " )
-ylabel ( " Ampli tude x [ n]−−−−> " )
+xlabel ( " Discrete Time Index n −−−−> " )
+ylabel ( " Amplitude x [ n]−−−−> " )
 title ( " IDFT s e q u e n c e " )
 //Example
 //
